@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Censo Galático</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div id="searchBox">
+        <input type="text" id="search" value="" placeholder="Digite um nome de planeta ..." />
+        <input type="button" id="searchBtn" value="Pesquisar" onclick="SearchPlanets();" />
+        <input type="button" id="clearBtn" value="Limpar" onclick="ClearPlanets();" />
+    </div>
+    <div class="container">
+        <div id="planets-list"></div>
+        <div id="planets-details"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

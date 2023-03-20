@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    background-image: url(star-wars-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: yellow;
+    background-color: black;
+    border: 2px solid yellow;
+    padding: 6px 12px;
+}
+
+button:hover{ 
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;   
+}
+  
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05);
+    100% { transform: scale(1); }
+    }
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+#planets-list, #planets-details {
+  width: 50%;
+}
+
+#planets-list {
+  z-index: -100;
+  position: relative;
+  margin-top: 40px;
+  float: left;
+  height: fit-content;
+  overflow-y: hidden;
+}
+
+#planets-details {
+  height: fit-content;
+  position: fixed;
+  float: right;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  margin: 20px 20px 0 0;
+}
+
+#searchBox {
+  background-color: black;
+  position: fixed;
+  float: left;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.show-border {
+  border: 1px solid yellow;
+}
+
+#search {
+  font-size: 18px;
+  font-weight: bold;
+  color: yellow;
+  background-color: black;
+  border: 2px solid yellow;
+  padding: 6px 12px;
+}
+
+#searchBtn, #clearBtn {
+  font-size: 18px;
+  color: black;
+  background-color: yellow;
+  border: 2px solid yellow;
+  padding: 6px 12px;
+}
+
+hr {
+  border: 1px solid yellow;
+}
+
+table {
+  width: 100%;
+}
+
+table {
+  background-color: black;
+}
+
+table, tr, td {
+  border: 1px solid yellow;
+  color: yellow;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+h1 {
+  margin: 15px 0;
+}
